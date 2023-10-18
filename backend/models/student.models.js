@@ -7,7 +7,6 @@ const studentSchema = mongoose.Schema({
     },
     classs: {
         type: String,
-        required: true
     },
     marks: {
         type: Number,

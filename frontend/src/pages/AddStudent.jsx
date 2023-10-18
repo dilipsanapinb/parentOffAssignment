@@ -25,8 +25,10 @@ const AddStudent = () => {
                     'Content-type': 'application/json'
                 }
             };
-            await axios.post('http://localhost:8001/student', {
-            name,classs,marks
+            await axios.post('http://localhost:8001/student/add', {
+                name,
+                classs,
+                marks
             }, config);
             navigate('/')
         } catch (error) {

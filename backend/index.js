@@ -3,6 +3,9 @@ const connection=require('./database/db')
 const studentRouter=require('./routes/user.routes')
 const app = express();
 app.use(express.json());
+const cors = require('cors');
+
+app.use(cors());
 
 app.get('/', (req, res) => {
     res.status(200).json({message:"Basic route"})
